@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proiect 1 - Filtrare valori</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <h1>Filtrare valori</h1>
+        <img src="logoCircular.png" alt="Logo Site">
+    </div>
+    <p>Acest site va filtra o listă de valori introdusă de utilizator și va afișa doar numerele pare sau va afișa
+        rândurile pare dintr-un fișier text, ales din PC.</p>
+    <fieldset>
+        <label for="lstNr">Introduceți o listă de numere, separate prin spații:</label>
+        <input type="text" name="lstNr" id="lstNr">
+    </fieldset>
+    <div class="container">
+        <input type="button" onclick="filterEvenNumbers()" value="Filtrează numerele">
+        <button id="btnGen">Filtrare valori generate automat</button>
+        <input id="inputFile" type="file" style="display: none;">
+        <button id="filePC" onclick="document.getElementById('inputFile').click()">Selectează un fișier și afișează rândurile pare</button>
+    </div>
+    <div id="outputDiv"></div>
+    <script src="filterNumbers.js"></script>
+</body>
+</html>
